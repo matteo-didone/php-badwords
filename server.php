@@ -2,6 +2,8 @@
 $paragraph = $_POST['paragraphToBePrinted'];
 
 $wordToBeCensored = $_POST['wordToBeCensored'];
+
+$paragraphLength = strlen($paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +14,7 @@ $wordToBeCensored = $_POST['wordToBeCensored'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Server</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="server-style.css">
 </head>
 
 <body>
@@ -21,7 +23,7 @@ $wordToBeCensored = $_POST['wordToBeCensored'];
             <?php echo $paragraph; ?>
         </h1>
         <h1>It is
-            <?php strlen($paragraph); ?> characters long
+            <?php echo $paragraphLength; ?> characters long
         </h1>
     </div>
 
