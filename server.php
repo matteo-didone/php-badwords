@@ -1,9 +1,16 @@
 <?php
-$paragraph = $_POST['paragraphToBePrinted'];
+// Storing paragraph in a variable
+$paragraph = $_POST['paragraph'];
 
+// Storing wordToBeCensored in a variable
 $wordToBeCensored = $_POST['wordToBeCensored'];
 
+// Storing the length of the paragraph in another variable, that we'll be printing
 $paragraphLength = strlen($paragraph);
+
+// Using str_replace() method to replace the word that needs to be censored with "***", inside of the original paragraph
+// Then, we store the "updated" paragraph in another variable, that I'm calling censoredParagraph
+$censoredParagraph = str_replace($wordToBeCensored, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
