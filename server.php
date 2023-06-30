@@ -11,6 +11,9 @@ $paragraphLength = strlen($paragraph);
 // Using str_replace() method to replace the word that needs to be censored with "***", inside of the original paragraph
 // Then, we store the "updated" paragraph in another variable, that I'm calling censoredParagraph
 $censoredParagraph = str_replace($wordToBeCensored, '***', $paragraph);
+
+// Storing the length of the censored paragraph in another variable, that we'll be printing
+$censoredParagraphLength = strlen($censoredParagraph);
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +38,12 @@ $censoredParagraph = str_replace($wordToBeCensored, '***', $paragraph);
     </div>
 
     <div class="second-section">
-        
+    <h1>Your Updated Paragraph says:
+            <?php echo $censoredParagraph; ?>
+        </h1>
+        <h1>It is
+            <?php echo $censoredParagraphLength; ?> characters long
+        </h1>
     </div>
 </body>
 

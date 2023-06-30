@@ -39,7 +39,7 @@ Display the paragraph and its length again, after replacing all occurrences of t
     <!-- Form Section -->
     <!-- Action is the receiver of my form's data -->
     <!-- Method is the method that's being used to pass the data -->
-    <form action="server.php" method="post">
+    <form action="server.php" method="POST">
 
         <!-- First Label -->
         <label for="paragraph">First Paragraph: </label>
