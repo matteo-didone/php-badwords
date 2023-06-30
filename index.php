@@ -1,3 +1,20 @@
+<!-- 
+Create a PHP form that allows sending two fields: a paragraph and a word to censor.
+Manage everything with two different files. The first file should allow the user to input the data and send the request to the server.
+The second file will receive the request and perform the following operations:
+
+Display the paragraph and its length on the screen.
+Display the paragraph and its length again, after replacing all occurrences of the censored word with three asterisks.
+Translated into English:
+Description:
+Create a PHP form that allows sending two fields: a paragraph and a word to censor.
+Manage everything with two different files. The first file should allow the user to input the data and send the request to the server.
+The second file will receive the request and perform the following operations:
+
+Display the paragraph and its length on the screen.
+Display the paragraph and its length again, after replacing all occurrences of the censored word with three asterisks.
+-->
+
 <?php
 
 ?>
@@ -24,15 +41,20 @@
     <!-- Form Section -->
     <!-- Action is the receiver of my form's data -->
     <!-- Method is the method that's being used to pass the data -->
-    <form action="" method="">
-        <!-- First Paragraph Field -->
-        <input type="text" name="">
+    <form action="server.php" method="post">
 
+        <!-- First Label -->
+        <label for="paragraph">First Paragraph: </label>
+        <!-- First Paragraph Field -->
+        <input type="text" name="paragraph">
+
+        <!-- Second Label -->
+        <label for="word">Word To Be Censored: </label>
         <!-- Word that needs to be censored -->
-        <input type="text" name="">
+        <input type="text" name="wordToBeCensored" id="word">
 
         <button type="submit">
-            Invia il form
+            Send the form
         </button>
     </form>
 </body>
