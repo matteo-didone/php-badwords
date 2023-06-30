@@ -28,23 +28,26 @@ $censoredParagraphLength = strlen($censoredParagraph);
 </head>
 
 <body>
-    <div class="first-section">
-        <h1>Your Paragraph says:
-            <?php echo $paragraph; ?>
-        </h1>
-        <h1>It is
-            <?php echo $paragraphLength; ?> characters long
-        </h1>
+    <div class="container">
+        <div class="first-section">
+            <h1>Your Paragraph says:
+                <?php echo $paragraph; ?>
+            </h1>
+            <h1>It is
+                <?php echo $paragraphLength; ?> characters long
+            </h1>
+        </div>
+
+        <div class="second-section">
+            <h1>Your Updated Paragraph says:
+                <?php echo $censoredParagraph; ?>
+            </h1>
+            <h1>It is
+                <?php echo $censoredParagraphLength; ?> characters long
+            </h1>
+        </div>
     </div>
 
-    <div class="second-section">
-    <h1>Your Updated Paragraph says:
-            <?php echo $censoredParagraph; ?>
-        </h1>
-        <h1>It is
-            <?php echo $censoredParagraphLength; ?> characters long
-        </h1>
-    </div>
 </body>
 
 </html>

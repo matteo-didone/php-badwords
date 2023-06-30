@@ -19,14 +19,11 @@ h1 {
     margin: 0 0 10px;
 }
 
-.section {
+.first-section {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.section h1 {
-    color: #333;
-}
-
-.section p {
-    color: #777;
+.second-section {
+    text-align: center;
 }
